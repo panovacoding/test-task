@@ -33,54 +33,6 @@ address {
          url(assets/fonts/circe-extrabold.woff2) format(woff2);
 }
 
-@media screen and (min-width:769px) {
-    .button--menu {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-    }
-
-    .heading-section__inner-wrap {
-        gap: 120px;
-        justify-content: center;
-    }
-
-    .button--heading {
-        width: 208px;
-    }
-
-    .heading-section__buttons-wrap {
-        gap: 16px;
-    }
-
-    h1 {
-        font-family: "Circe Extra Bold";
-        font-size: 50px;
-        line-height: 50px;
-        max-width: 604px;
-    }
-
-    .heading-section__heading p {
-        font-size: 20px;
-        line-height: 20px;
-        padding: 12px 0 38px;
-    }
-
-    .heading-section__buttons-wrap button  {
-        width: 208px;
-    }
-
-    .heading-section__grades-and-standart-wrap {
-        gap: 20px;
-    }
-
-    .heading-section__perks li {
-        max-width: 175px;
-    }
-}
-
 @media screen and (max-width:768px) {
     .menu {
         display: none;
@@ -108,7 +60,7 @@ address {
         width: 100%;
     }
 
-    h1 {
+    h1, h2 {
         font-family: "Circe Extra Bold";
         font-size: 30px;
         line-height: 32px;
@@ -127,16 +79,127 @@ address {
 
     .heading-section__perks {
         row-gap: 24px;
+        align-items: flex-start;
     }
 
     .heading-section__perks li {
         max-width: 132px;
     }
 
+    .catalog li {
+        max-width: 132px;
+    }
+
+    .catalog__image {
+        margin-bottom: 8px;
+    }
+
+    .catalog li .name {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 8px;
+    }
+
+    .catalog li .features {
+        font-size: 12px;
+        line-height: 13px;
+        margin-bottom: 10px;
+    }
+
+    .catalog li .price {
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .button--menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .heading-section__inner-wrap {
+        gap: 120px;
+        justify-content: center;
+    }
+
+    .button--heading {
+        width: 208px;
+    }
+
+    .heading-section__buttons-wrap {
+        gap: 16px;
+    }
+
+    h1 {
+        max-width: 604px;
+    }
+
+    h1, h2 {
+        font-family: "Circe Extra Bold";
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .heading-section__heading p {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 12px 0 38px;
+    }
+
+    .heading-section__buttons-wrap button  {
+        width: 208px;
+    }
+
+    .heading-section__grades-and-standart-wrap {
+        gap: 20px;
+    }
+
+    .heading-section__perks {
+        align-items: center;
+    }
+    
+    .heading-section__perks li {
+        max-width: 175px;
+    }
+
+    .catalog li {
+        max-width: 304px;
+    }
+
+    .catalog__image {
+        margin-bottom: 28px;
+    }
+
+    .catalog li .name {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+
+    .catalog li .features {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 45px;
+    }
+
+    .catalog li .price {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
 }
 
 body {
     font-family: "Circe Regular";
+}
+
+h2 {
+    font-family: "Circe Extra Bold";
 }
 
 .container {
@@ -379,7 +442,6 @@ body {
 .heading-section__perks {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     padding: 80px 0 98px;
 }
@@ -391,4 +453,30 @@ body {
 
 .heading-section__perks li p {
     margin-top: 15px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+    margin: 50px 0 80px;
+}
+
+.catalog li {
+    border: 1px solid #E6E6E6;
+    text-align: center;
+}
+
+.catalog__image {
+    width: 100%;
+}
+
+.catalog li .name {
+    text-transform: uppercase;
+    font-family: "Circe Bold";
+}
+
+.catalog li .price {
+    font-family: "Circe Extra Bold";
 }
