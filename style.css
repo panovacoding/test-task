@@ -588,10 +588,15 @@ h2 {
     stroke: #999999;
 }
 
+.about-company-section-wrap {
+    background-color: #F5F5F5;
+}
+
 .about-company-section {
     padding: 80px 0;
     display: flex;
 }
+
 
 .about-company-section__text p {
     line-height: 24px;
