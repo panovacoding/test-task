@@ -132,6 +132,30 @@ address {
     .swiper {
         overflow: visible;
     }
+
+    .about-company-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-company-section__text {
+        order: 2;
+    }
+    
+    .about-company-section__image {
+        order: 1;
+        margin-top: 25px;
+    }
+
+    .about-company-section {
+        position: relative;
+    }
+    
+    .about-company-section h2 {
+        position: absolute;
+        top: 40px;
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (min-width:769px) {
@@ -225,6 +249,14 @@ address {
 
     .certificates-section__buttons {
         display: inline-block;
+    }
+    
+    .about-company-section {
+        gap: 144px;
+    }
+
+    .about-company-section h2 {
+        margin-bottom: 30px;
     }
 }
 
@@ -554,4 +586,14 @@ h2 {
 
 .btn-swiper-prev:disabled > svg, .btn-swiper-next:disabled > svg {
     stroke: #999999;
+}
+
+.about-company-section {
+    padding: 80px 0;
+    display: flex;
+}
+
+.about-company-section__text p {
+    line-height: 24px;
+    margin-bottom: 16px;
 }
