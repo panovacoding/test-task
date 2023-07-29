@@ -44,6 +44,7 @@ address {
 
     .heading-section__image {
         order: 2;
+        align-self: center;
     }
 
     .heading-section__inner-wrap {
@@ -82,12 +83,8 @@ address {
         align-items: flex-start;
     }
 
-    .heading-section__perks li {
-        max-width: 132px;
-    }
-
-    .catalog li {
-        max-width: 132px;
+    .heading-section__perks li, .catalog li {
+        width: 132px;
     }
 
     .catalog__image {
@@ -145,6 +142,7 @@ address {
     .about-company-section__image {
         order: 1;
         margin-top: 25px;
+        width: 100%;
     }
 
     .about-company-section {
@@ -155,6 +153,38 @@ address {
         position: absolute;
         top: 40px;
         margin-bottom: 0;
+    }
+
+    .footer__inner-wrap {
+        padding-top: 40px;
+    }
+
+    .footer__inner-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__list {
+        align-self: center;
+        align-items: center;
+    }
+
+    .footer__list {
+        margin-bottom: 30px;
+    }
+
+    .footer__inner-wrap {
+        padding-bottom: 30px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .copyright {
+        flex-direction: column;
+        padding-bottom: 40px;
+        gap: 9px;
     }
 }
 
@@ -258,6 +288,30 @@ address {
     .about-company-section h2 {
         margin-bottom: 30px;
     }
+
+    .footer__inner-wrap {
+        padding-top: 80px;
+    }
+
+    .footer__list:nth-child(1) {
+        width: 178px;
+    }
+
+    .footer__list:nth-child(1) li:nth-child(2) {
+        max-width: 138px;
+    }
+
+    .footer__inner-wrap {
+        padding-bottom: 40px;
+    }
+
+    hr {
+        margin-bottom: 36px;
+    }
+
+    .copyright {
+        padding-bottom: 36px;
+    }
 }
 
 body {
@@ -267,6 +321,7 @@ body {
 h2 {
     font-family: "Circe Extra Bold";
 }
+
 
 .container {
     width: 87.5%;
@@ -312,7 +367,7 @@ h2 {
     gap: 10px;
 }
 
-.menu li:nth-child(5) > a {
+.menu li:nth-child(5) > a, .footer__list:nth-child(1) li:nth-child(3)>a {
     border: 2px solid #A2785C4D;
     display: flex;
     align-items: center;
@@ -325,7 +380,7 @@ h2 {
     color: #000000;
 }
 
-.menu li:nth-child(6) button {
+.menu li:nth-child(6) button, .footer__list:nth-child(5) li:nth-child(1) button {
     border: 2px solid #A2785C4D;
     border-radius: 3px;
     font-family: "Circe Extra Bold";
@@ -333,7 +388,7 @@ h2 {
     padding: 10px 20px;
 }
 
-.menu li:nth-child(6) button:hover {
+.menu li:nth-child(6) button:hover, .footer__list:nth-child(5) li:nth-child(1) button:hover {
     background-color: #A2785C;
     color: #FFFFFF;
     transition: all 0.2s ease-in-out;
@@ -601,4 +656,101 @@ h2 {
 .about-company-section__text p {
     line-height: 24px;
     margin-bottom: 16px;
+}
+
+.footer__inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list li {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer__list li, .footer__list li>a {
+    color: #000000;
+}
+
+.footer__list li > a:hover, .copyright a:hover {
+    color: #A2785C;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__list:nth-child(1) {
+    gap: 22px;
+}
+
+.footer__list:nth-child(1) li:nth-child(2) {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.footer__list:nth-child(1) li:nth-child(3) {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__list:nth-child(1) li:nth-child(3)>a {
+    width: 40px;
+}
+
+.footer__list:nth-child(2), .footer__list:nth-child(4) {
+    gap: 26px;
+}
+
+.footer__list:nth-child(3) {
+    gap: 27px;
+}
+
+.footer__list:nth-child(5) {
+    gap: 25px;
+}
+
+.footer__list li:nth-child(1) {
+    font-family: "Circe Bold";
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer__list:nth-child(5) li {
+    font-family: "Circe Regular";
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer__list:nth-child(5){
+    max-width: 192px;
+}
+
+.footer__list:nth-child(5) li:nth-child(1) > a{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright > a {
+    color: #000000;
+}
+
+.copyright > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyright > div > a > svg {
+    width: 68px;
+    height: 29px;
 }
