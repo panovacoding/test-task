@@ -111,6 +111,27 @@ address {
         line-height: 15px;
         margin-bottom: 16px;
     }
+
+    .swiper-slide, .swiper-image {
+        width: 234px;
+        height: 334px;
+    }
+
+    .certificates-section .container h2 {
+        margin-bottom: 30px;
+    }
+
+    .certificates-section {
+        overflow: hidden;
+    }
+
+    .certificates-section__buttons {
+        display: none;
+    }
+
+    .swiper {
+        overflow: visible;
+    }
 }
 
 @media screen and (min-width:769px) {
@@ -191,6 +212,19 @@ address {
         font-size: 22px;
         line-height: 24px;
         margin-bottom: 30px;
+    }
+
+    .swiper-slide, .swiper-image {
+        width: 304px;
+        height: 434px;
+    }
+
+    .certificates-section .container h2 {
+        margin-bottom: 50px;
+    }
+
+    .certificates-section__buttons {
+        display: inline-block;
     }
 }
 
@@ -479,4 +513,45 @@ h2 {
 
 .catalog li .price {
     font-family: "Circe Extra Bold";
+}
+
+.certificates-section {
+    background: linear-gradient(271.84deg, #BDA074 -4.38%, #A2785C 100.93%);
+}
+
+.certificates-section .container {
+    padding: 80px 0;
+}
+
+.certificates-section .container h2 {
+    color: #FFFFFF;
+}
+
+.certificates-section__heading-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-swiper-prev, .btn-swiper-next {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.btn-swiper-prev > svg, .btn-swiper-next > svg {
+    width: 10px;
+    height: 10px;
+    stroke: black;
+}
+
+.btn-swiper-prev:disabled, .btn-swiper-next:disabled {
+    background-color: #FFFFFF;
+}
+
+.btn-swiper-prev:disabled > svg, .btn-swiper-next:disabled > svg {
+    stroke: #999999;
 }
